@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Moirai+One&display=swap&family=Gaegu:wght@300;400;700&family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&display=swap&family=Nanum+Gothic:wght@400;700;800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"); */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(255, 185, 185);
+  text-decoration: underline;
+}
+
+html {
+  /* font-family: "Nanum Gothic", serif; */
+  font-family: "Gaegu", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--multilist-el-list-layout-background-color);
+  color: var(--multilist-el-list-layout-text-color);
+  margin: 0;
+  padding: 0;
+  background-color: rgba(184, 226, 181, 0.175);
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 10px;
+  overflow: auto;
+  display: block;
+}
+/* table box-sizing: border-box by default (including padding and border but not margin) */
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  text-wrap: wrap;
+  max-height: 20px;
+}
+th {
+  text-align: center;
+  text-wrap: nowrap;
+  position: sticky;
+  background-color: rgb(255, 185, 185);
+}
+th:first-child {
+  border-radius: 16px 0 0 0;
+}
+th:last-child {
+  border-radius: 0 16px 0 0;
+}
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+  margin: 20px;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.container .input {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em;
+}
+.container .input > * {
+  margin-left: 2rem;
+}
+.sidebar-item {
+  display: block;
+  text-wrap: nowrap;
+}
+
+.ingredient,
+.step {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+}
+.ingredient > *,
+.step > * {
+  flex: 1;
+}
+#navwrapper {
+  display: inline-block;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5em;
+  flex-wrap: nowrap;
+}
+nav > a {
+  text-decoration: none;
+  padding: 0.5em;
+}
+#opensidebar {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.twoDbutton {
+  cursor: pointer;
+  background-color: rgb(255, 185, 185);
+  border-radius: 20px;
+  box-shadow: 6px 6px 1px 0.5px rgba(13, 74, 10, 0.2);
+  border: none;
+  padding: 0.5em;
+  font-family: "Gaegu", serif;
+  font-size: 15px;
+  text-wrap: nowrap;
+  min-width: min-content;
+}
+
+.no-shadow {
+  cursor: pointer;
+  background-color: white;
+  /* background-color: rgba(184, 226, 181, 0.175); */
+  border-radius: 5px;
+  border: dotted;
+  font-family: "Gaegu", serif;
+  font-size: 15px;
+  text-wrap: nowrap;
+  min-width: min-content;
+  box-shadow: none;
+  margin: 0;
+  padding: 0.2rem;
+}
+
+#opensidebar:hover {
+  background-color: rgb(174, 174, 174);
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.list-header {
+  background-color: rgb(255, 185, 185);
+}
+.section {
+  border-color: var(--multilist-el-list-layout-border-color);
+  border-radius: 16px;
+  border-width: 1px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  max-width: 680px;
+  min-width: 300px;
+  overflow: hidden;
+  box-shadow: 12px 12px 2px 1px rgba(13, 74, 10, 0.2);
+  background-color: white;
+  margin: 2em;
+}
+
+#mySidebar > * {
+  margin-top: 10px;
+}
+
+.section > * {
+  padding: 1rem;
+}
+#website-name {
+  font-family: "Moirai One", serif;
+  font-size: 2em;
+  font-weight: 400;
+  margin: 20px;
+  white-space: nowrap;
+}
+
+/* .moirai-one-regular {
+  font-family: "Moirai One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+}
+
+.gaegu-light {
+  font-family: "Gaegu", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.gaegu-regular {
+  font-family: "Gaegu", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gaegu-bold {
+  font-family: "Gaegu", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.gowun-dodum-regular {
+  font-family: "Gowun Dodum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gowun-batang-regular {
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gowun-batang-bold {
+  font-family: "Gowun Batang", serif;
+  font-weight: 700;
+  font-style: normal;
+} 
+.nanum-gothic-regular {
+  font-family: "Nanum Gothic", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nanum-gothic-bold {
+  font-family: "Nanum Gothic", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nanum-gothic-extrabold {
+  font-family: "Nanum Gothic", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+*/
